@@ -11,6 +11,9 @@ body{
     padding: 30px 50px;
     background-color: #faf5c7;
 }
+.fa-bars{
+    display: none;
+}
 a{
     text-decoration: none;
 }
@@ -22,11 +25,21 @@ a{
 .lear span{
     color: #FF7132;
 }
-.figma1 nav a{
-    margin-right: 64px;
+.figma1 ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 450px;
+}
+.figma1 li a{
+    text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     color: #000;
+}
+ul .fa-angle-down{
+    color: #727171;
 }
 .sig{
     padding: 5px;
@@ -60,7 +73,25 @@ a{
     background-color: #faf5c7;
 }
 .virtual{
-    width: 50%;
+    width: 700px;
+}
+.welcom{
+    display: flex;
+    width: 160px;
+    padding: 3px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+.welcom p{
+    color: #dfd9d9;
+}
+.point{
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    margin: 8px;
+    background-color: #dfd9d9;
 }
 .virtual h2{
     font-size: 64px;
@@ -98,6 +129,10 @@ a{
     background-color: #7B5896;
     border-radius: 24px;
 }
+.star:hover{
+    background-color: #fff;
+    color: #7B5896;
+}
 .started{
     display: inline;
     margin-left: 20px;
@@ -127,7 +162,7 @@ a{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: relative;
     z-index: 1;
-    bottom: 30px;
+    bottom: 50px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -170,7 +205,6 @@ a{
 .design1{
     display: flex;
     justify-content: space-between;
-    margin: 30px 0;
 }
 .design{
     display: flex;
@@ -186,6 +220,7 @@ a{
     background-color: #FF7132;
     border-radius: 10px;
     gap: 10px;
+    margin-top: 30px;
 }
 .design:hover{
     display: flex;
@@ -197,10 +232,15 @@ a{
     font-size: 17px;
     font-weight: 600;
     border: 1px solid #FFE6DA;
-    color: #000;
     background-color: #FFE6DA;
     border-radius: 10px;
     gap: 10px;
+}
+.design:hover p{
+    color: #000;
+}
+.design:hover i{
+    color: #FF7132;
 }
 .adven{
     display: flex;
@@ -209,8 +249,11 @@ a{
 .advanced{
     width: 400px;
     height: 500px;
-    margin: 50px 0;
+    margin-top: 50px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.rectangle{
+    width: 400px;
 }
 .advanced:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -218,9 +261,24 @@ a{
 .wide{
     text-align: center;
 }
+.welcom-point{
+    display: flex;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #fad0b4;
+    background-color: #fad0b4;
+    margin-left: 10px;
+}
+.welcom-point:hover{
+    background-color: #fcfae9;
+    border: 1px solid #fcfae9;
+}
+.welcom-point .point{
+    background-color: #EF516C;
+}
 .wide2{
     display: inline;
-    align-items: center;
     color: #7B5896;
     font-size: 22px;
     font-weight: 700;
@@ -241,6 +299,7 @@ a{
     font-size: 14px;
 }
 .enroll{
+    display: none;
     width: 95%;
     padding: 15px;
     margin: 0px 10px 10px 10px;
@@ -251,8 +310,26 @@ a{
     font-size: 16px;
     font-weight: 600;
 }
-.fa-solid .fa-angle-down {
-    margin-left: 40px;
+.adven:hover  .enroll{
+    display: block;
+}
+.fa-solid-down {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 1px solid #c0bebe;
+    background-color: #c0bebe;
+}
+.fa-angle-down{
+    color: #fff;
 }
 
 .figma5{
@@ -265,7 +342,7 @@ a{
     width: 50%;
 }
 .about-us{
-    width: 50%;
+    width: 31%;
     margin: 0 100px;
 }
 .about p{
@@ -307,6 +384,285 @@ a{
     border-radius: 24px;
     margin-top: 15px;
 }
+.getstar:hover{
+    background-color: #FFE6DA;
+    color: #FF7132;
+}
+
+.figma6{
+    margin: 100px 0;
+}
+.figma6 .pric{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+.monthly{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.monthly p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.year{
+    border: 1px solid #000;
+    background-color: #000;
+    width: 60px;
+    padding: 3px;
+    border-radius: 15px;
+    margin: 0 30px;
+}
+.year1{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #4ADB61;
+    margin-left: 45px;
+}
+.basic1{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.basic{
+    width: 300px;
+    height: 350px;
+    border: 1px solid #FF7132;
+    border-radius: 16px;
+    margin: 50px;
+    padding: 20px 30px;
+    background-color: #FF7132;
+}
+.basic:hover{
+    box-shadow: 0px -2px 26px 4px rgba(244, 154, 9, 0.6);
+}
+.basic1 h4{
+    font-size: 24px;
+    font-weight: 700;
+}
+.basic h3{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 25px 0;
+}
+.basic p{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.the{
+    display: flex;
+}
+.the p{
+    margin-left: 10px;
+}
+.basic button{
+    padding: 8px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    color: #000;
+    background-color: #fff;
+    border-radius: 14px;
+    margin-top: 25px;
+}
+.basic button:hover{
+    color: #fff;
+    background-color: #fac19b;
+    transition: all 0.3s ease-in-out;
+}
+.basic.stan button:hover{
+    color: #fff;
+    background-color: #f58585;
+    transition: all 0.5s ease-in-out;
+}
+.basic.ultime button:hover{
+    color: #fff;
+    background-color: #9ef396;
+    transition: all 0.3s ease-in-out;
+}
+.basic span{
+    font-size: 16px;
+}
+.starte{
+    width: 300px;
+    height: 350px;
+    border: 1px solid #FF7132;
+    border-radius: 16px;
+    margin: 50px;
+    padding: 20px 30px;
+    background-color: #EF516C;
+}
+.basic.stan{
+    background-color: #EF516C;
+}
+.basic.stan:hover{
+    box-shadow: 0px -2px 26px 1px rgba(219, 5, 137, 0.6);
+}
+.basic.ultime{
+    background-color: #30B338;
+    border: 1px solid #30B338;
+}
+.basic.ultime:hover{
+    box-shadow: 0px 1px 26px 11px rgba(5, 219, 49, 0.6);
+}
+
+.figma{
+    background-color: #faf5c7;
+    padding: 10px;
+}
+
+.figma7{
+    width: 86%;
+    height: 200px;
+    border-radius: 50px;
+    border: 1px solid #7B5896;
+    text-align: center;
+    margin: 50px 60px;
+    background-color: #7B5896;
+    color: #fff;
+    padding: 40px;
+}
+.figma7 h3{
+    font-size: 36px;
+    font-weight: 700;
+}
+.figma7 p{
+    font-size: 20px;
+    margin: 30px 0;
+}
+.emaile{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    border-radius: 100px;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #7B5896;
+    margin-left: 100px;
+}
+.get-star{
+    border-radius: 100px;
+    background-color: #7B5896;
+    color: #fff;
+    padding: 10px;
+}
+.but{
+    margin-left: 337px;
+}
+
+.figma8{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 20px 50px;
+}
+.figma8 ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 450px;
+}
+.figma8 li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.facebook i{
+    margin-right: 10px;
+    font-size: 25px;
+    color: #7B5896;
+}
+.fa-square-youtube:hover{
+    color: #fc0404;
+}
+.fa-square-twitter:hover{
+    color: #3eaee2;
+}
+.fa-square-facebook:hover{
+    color: #144afc;
+}
+.rights{
+    color: #aaaaaa;
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .advanced.wordprees2{
+        display: none;
+    }
+    .adven{
+        margin: 0 100px;
+    }
+}
+@media screen and (max-width: 992px){
+    .figma1 ul{
+        width: 367px;
+    }
+    .design{
+        width: 105px;
+    }
+    .adven {
+        margin: 0 17px;
+    }
+    .mode {
+        display: none;
+    }
+    .about-us {
+        width: 46%;
+    }
+    .basic {
+        height: 386px;
+    }
+    .figma7{
+        margin: 50px 32px;
+    }
+    .but {
+        margin-left: 19%;
+    }
+}
+@media screen and (max-width:768px){
+    .fa-bars{
+        display: block;
+        font-size: 31px;
+        margin-right: 10px;
+    }
+    .figma1 ul{
+        display: none;
+    }
+    .fa-lock{
+        display: none;
+    }
+    .virtual1{
+        display: none;
+    }
+    .virtual{
+        width: 616px;
+    }
+    .design1 {
+        flex-wrap: wrap;
+    }
+    .design{
+        padding: 17px;
+        width: 216px;
+    }
+}
+@media screen and (max-width:576px){
+    
+}
+
 
 
 
